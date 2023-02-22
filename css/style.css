@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: #0d0404;
+}
+.progress__wrapper {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  height: 20px;
+  width: 100%;
+  background-color: white;
+}
+.progress__value {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+.wrapper {
+  width: 800px;
+  height: 100%;
+  color: white;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.timer__header {
+  display: flex;
+  justify-content: space-around;
+}
+.timer-mode {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.timer-mode.active {
+  border: 1px solid #7b4936;
+  background-color: #0d0404;
+  color: #7b4936;
+}
+.timer__clock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 70px;
+
+  font-size: 256px;
+  font-size: 256px;
+  font-weight: 200;
+  line-height: 218px;
+  letter-spacing: 0em;
+
+  user-select: none;
+}
+.timer__add-time {
+  position: absolute;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.timer__subst-time {
+  position: absolute;
+  right: -20px;
+  cursor: pointer;
+}
+
+.timer__footer {
+  margin: 70px auto 0 auto;
+}
+
+.timer__start {
+  background-image: url("../images/icons/start.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  width: 128px;
+  height: 96px;
+  background-color: rgba(255, 76, 76, 0.71);
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__start--active {
+  background-image: url("../images/icons/stop.svg");
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro timer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="progress__wrapper">
+      <div class="progress__value"></div>
+    </div>
+    <div class="wrapper">
+      <section class="timer">
+        <header class="timer__header">
+          <div class="timer-mode active" data-mode="work">
+            <div class="timer-mode__icon">
+              <img src="images/icons/focus.svg" alt="Focus icon" />
+            </div>
+            <span class="timer-mode__text">Focus</span>
+          </div>
+          <div class="timer-mode" data-mode="shortBreak">
+            <div class="timer-mode__icon">
+              <img src="images/icons/short-break.svg" alt="Short-break icon" />
+            </div>
+            <span class="timer-mode__text">Short Break</span>
+          </div>
+          <div class="timer-mode" data-mode="longBreak">
+            <div class="timer-mode__icon">
+              <img src="images/icons/short-break.svg" alt="Short-break icon" />
+            </div>
+            <span class="timer-mode__text">Long Break</span>
+          </div>
+        </header>
+
+        <div class="timer__clock">
+          <div class="timer__add-time" data-operation="plus">+</div>
+          <div class="timer__minutes" id="min">24</div>
+          <div class="timer__seconds" id="sec">59</div>
+          <div class="timer__subst-time" data-operation="minus">-</div>
+        </div>
+        <footer class="timer__footer">
+          <div class="timer__buttons">
+            <div class="timer__start" data-process="start"></div>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <audio src="./audio/button-sound.mp3" data-sound="start"></audio>
+    <audio src="./audio/notification-end.mp3" data-sound="end"></audio>
+    <script src="js/main.js"></script>
+  </body>
+</html>
