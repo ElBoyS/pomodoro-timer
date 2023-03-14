@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@500;600;700&display=swap');
 *,
 *::after,
 *::before {
@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: inherit;
 }
 body {
@@ -71,18 +71,16 @@ body {
   margin-top: 70px;
 
   font-size: 256px;
-  font-size: 256px;
   font-weight: 200;
   line-height: 218px;
   letter-spacing: 0em;
 
   user-select: none;
 }
+
 .timer__add-time {
   position: absolute;
   left: -20px;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
 }
 .timer__subst-time {
@@ -96,7 +94,7 @@ body {
 }
 
 .timer__start {
-  background-image: url("../images/icons/start.svg");
+  background-image: url('../images/icons/start.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -110,5 +108,47 @@ body {
 }
 
 .timer__start--active {
-  background-image: url("../images/icons/stop.svg");
+  background-image: url('../images/icons/stop.svg');
+}
+
+@media (max-width: 1024px) {
+  .timer__clock {
+    font-size: 180px;
+  }
+  .timer__add-time {
+    left: 55px;
+  }
+  .timer__subst-time {
+    right: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .timer__header {
+    margin: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .timer__clock {
+    font-size: 180px;
+    margin-top: 0;
+  }
+  .timer__add-time {
+    left: 15px;
+  }
+  .timer__subst-time {
+    right: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .timer__clock {
+    font-size: 120px;
+    margin-top: 0;
+  }
+
+  .timer__seconds {
+    margin-top: -80px;
+  }
+  .timer__footer {
+    margin-top: 10px;
+  }
 }
