@@ -78,6 +78,15 @@ body {
   user-select: none;
 }
 
+.timer__add-time,
+.timer__subst-time {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
 .timer__add-time {
   position: absolute;
   left: -20px;
